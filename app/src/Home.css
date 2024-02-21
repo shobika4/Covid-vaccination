@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('vaccine.gif'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.669);
+   
+  }
+  
+  .title-container {
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #3498db;
+  }
+  
+  .subtitle-container {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #555;
+  }
+  
+  .buttons-container {
+    display: flex;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+#admin, #user {
+  color: black;
+  position: relative;
+  z-index: 1;
+}
+
+#admin::before,
+#user::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease;
+  z-index: 0;
+}
+
+
+#admin:hover::before,
+#user:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+#admin:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+#user:hover {
+  background-color: #27ae60;
+  transform: scale(1.05);
+}
+
+    

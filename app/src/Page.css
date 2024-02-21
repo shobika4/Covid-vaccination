@@ -1,0 +1,115 @@
+/* Page.css */
+
+.page-container {
+    display: flex;
+    width:90%;
+    
+    background-color: rgba(255, 255, 255, 0.5); /* Translucent white background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    padding: 20px;
+        /* Additional styling */
+      
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .locations-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .locations-table th,
+  .locations-table td {
+    padding: 10px;
+    border: 1px solid #0a0909;
+    text-align: center;
+  }
+  
+  .locations-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .locations-table td {
+    vertical-align: middle;
+  }
+  
+  .book-slot-btn {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .book-slot-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .book-slot-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Page.css */
+
+.search-box {
+    margin-bottom: 20px;
+  }
+  
+  .search-box input {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .highlighted-text {
+    font-weight: bold;
+  }
+  
+  .highlight {
+    background-color: yellow;
+  }
+  .dosages-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dosages-container input {
+    margin-right: 10px;
+  }
+  
+  .dosages-container button {
+    margin-left: auto;
+  }
+  .locations-table button:hover {
+    background-color: rgb(247, 118, 118);
+  }
+  
+  /* Style for logout button */
+  .logout-button:hover {
+    background-color:pink;
+  }
+  
+  /* Style for add button */
+  .add-location-container button:hover {
+    background-color: pink;
+  }
+    
